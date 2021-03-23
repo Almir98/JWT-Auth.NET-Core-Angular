@@ -1,0 +1,8 @@
+C:\Users\Almir Tihak\source\repos\Login.WebApi\Login.Model\bin\Debug\netstandard2.0\Login.Model.deps.json
+C:\Users\Almir Tihak\source\repos\Login.WebApi\Login.Model\bin\Debug\netstandard2.0\Login.Model.dll
+C:\Users\Almir Tihak\source\repos\Login.WebApi\Login.Model\bin\Debug\netstandard2.0\Login.Model.pdb
+C:\Users\Almir Tihak\source\repos\Login.WebApi\Login.Model\obj\Debug\netstandard2.0\Login.Model.csprojAssemblyReference.cache
+C:\Users\Almir Tihak\source\repos\Login.WebApi\Login.Model\obj\Debug\netstandard2.0\Login.Model.AssemblyInfoInputs.cache
+C:\Users\Almir Tihak\source\repos\Login.WebApi\Login.Model\obj\Debug\netstandard2.0\Login.Model.AssemblyInfo.cs
+C:\Users\Almir Tihak\source\repos\Login.WebApi\Login.Model\obj\Debug\netstandard2.0\Login.Model.dll
+C:\Users\Almir Tihak\source\repos\Login.WebApi\Login.Model\obj\Debug\netstandard2.0\Login.Model.pdb
