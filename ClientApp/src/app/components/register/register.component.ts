@@ -54,7 +54,6 @@ export class RegisterComponent implements OnInit {
     this.user.address = this.getRegisterControl.spanAddress.value;
     this.user.password = this.getRegisterControl.spanAddress.value;
 
-
   }
 
   cancelRegister(){
