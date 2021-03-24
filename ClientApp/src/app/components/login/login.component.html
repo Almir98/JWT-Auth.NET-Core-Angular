@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row m-0">
+    <div class="col-12 alert">
+      <div *ngIf="loginForm.touched" class="alert alert-info">
+        <p><strong>Information:</strong> You have made changes. Any unsaved changes will be lost!</p>
+      </div>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()">
+
+      <div class="form-group">
+        <input class="form-control" type="email" required formControlName="spanEmail" placeholder="Enter email *">
+        <span class="text-danger"
+          *ngIf="getLoginControl.spanEmail.touched && getLoginControl.spanEmail.errors?.required">Email is
+          required</span>
+      </div>
+
+      <div class="form-group">
+        <input class="form-control" type="password" required formControlName="spanPassword" placeholder="Enter password *">
+        <span class="text-danger"
+          *ngIf="getLoginControl.spanPassword.touched && getLoginControl.spanPassword.errors?.required">Password is
+          required</span>
+      </div>
+
+      <div class="buttons">
+        <div>
+          <button type="submit" class="btn btn-primary">Apply</button>
+          <button type="button" (click)="cancelLogin()" class="btn btn-info ml-3">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

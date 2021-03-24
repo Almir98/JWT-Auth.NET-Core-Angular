@@ -5,7 +5,7 @@ export class User {
     lastName: string;
     phone: string;
     email: string;
-    adress: string;
+    address: string;
     password: string;
     passwordConfirm: string;
 }

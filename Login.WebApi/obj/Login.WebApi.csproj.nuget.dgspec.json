@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Almir Tihak\\source\\repos\\Login.WebApi\\Login.WebApi\\Login.WebApi.csproj": {}
+    "C:\\Users\\Almir Tihak\\Desktop\\REST-WebAPI-Login\\Login.WebApi\\Login.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Almir Tihak\\source\\repos\\Login.WebApi\\Login.Model\\Login.Model.csproj": {
+    "C:\\Users\\Almir Tihak\\Desktop\\REST-WebAPI-Login\\Login.Model\\Login.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Almir Tihak\\source\\repos\\Login.WebApi\\Login.Model\\Login.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Almir Tihak\\Desktop\\REST-WebAPI-Login\\Login.Model\\Login.Model.csproj",
         "projectName": "Login.Model",
-        "projectPath": "C:\\Users\\Almir Tihak\\source\\repos\\Login.WebApi\\Login.Model\\Login.Model.csproj",
+        "projectPath": "C:\\Users\\Almir Tihak\\Desktop\\REST-WebAPI-Login\\Login.Model\\Login.Model.csproj",
         "packagesPath": "C:\\Users\\Almir Tihak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Almir Tihak\\source\\repos\\Login.WebApi\\Login.Model\\obj\\",
+        "outputPath": "C:\\Users\\Almir Tihak\\Desktop\\REST-WebAPI-Login\\Login.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\Almir Tihak\\source\\repos\\Login.WebApi\\Login.WebApi\\Login.WebApi.csproj": {
+    "C:\\Users\\Almir Tihak\\Desktop\\REST-WebAPI-Login\\Login.WebApi\\Login.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Almir Tihak\\source\\repos\\Login.WebApi\\Login.WebApi\\Login.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Almir Tihak\\Desktop\\REST-WebAPI-Login\\Login.WebApi\\Login.WebApi.csproj",
         "projectName": "Login.WebApi",
-        "projectPath": "C:\\Users\\Almir Tihak\\source\\repos\\Login.WebApi\\Login.WebApi\\Login.WebApi.csproj",
+        "projectPath": "C:\\Users\\Almir Tihak\\Desktop\\REST-WebAPI-Login\\Login.WebApi\\Login.WebApi.csproj",
         "packagesPath": "C:\\Users\\Almir Tihak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Almir Tihak\\source\\repos\\Login.WebApi\\Login.WebApi\\obj\\",
+        "outputPath": "C:\\Users\\Almir Tihak\\Desktop\\REST-WebAPI-Login\\Login.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -92,8 +92,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Almir Tihak\\source\\repos\\Login.WebApi\\Login.Model\\Login.Model.csproj": {
-                "projectPath": "C:\\Users\\Almir Tihak\\source\\repos\\Login.WebApi\\Login.Model\\Login.Model.csproj"
+              "C:\\Users\\Almir Tihak\\Desktop\\REST-WebAPI-Login\\Login.Model\\Login.Model.csproj": {
+                "projectPath": "C:\\Users\\Almir Tihak\\Desktop\\REST-WebAPI-Login\\Login.Model\\Login.Model.csproj"
               }
             }
           }

@@ -1,0 +1,15 @@
+.title{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.buttons{
+    text-align: center;
+    margin: auto;
+}
+
+.button{
+    margin-top: 50px;
+    padding: 8px 50px;
+}
