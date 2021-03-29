@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/_services/auth.service';
 import { User } from '../../../_models/User';
 
 
@@ -12,9 +13,11 @@ import { User } from '../../../_models/User';
 export class RegisterComponent implements OnInit {
 
   registerForm: FormGroup;
-  user: User = new User();
+  user: any ={};
+  model: any ={};
 
-  constructor(private fb:FormBuilder, private router: Router) { }
+
+  constructor(private fb:FormBuilder, private router: Router, private authService: AuthService) { }
 
   public get getRegisterControl(){
     return this.registerForm.controls;
@@ -26,7 +29,7 @@ export class RegisterComponent implements OnInit {
       spanFirstName:['',Validators.required],
       spanLastName:['',Validators.required],
       spanPhone:['',Validators.required],
-      spanEmail:['',Validators.required,Validators.pattern("[A-Za-z0-9._%-]+@[A-Za-z0-9._%-]+\\.[a-z]{2,3}")],
+      spanEmail:['',Validators.required],
       spanAddress:['',Validators.required],
       spanPassword:['',Validators.required],
       spanPasswordConfirm:['',Validators.required],
@@ -44,6 +47,11 @@ export class RegisterComponent implements OnInit {
     {
       this.getRegisterControl.spanPassword.invalid;
       this.getRegisterControl.spanPasswordConfirm.invalid;
+      this.getRegisterControl.spanPassword.reset();
+      this.getRegisterControl.spanPassword.markAsTouched();
+
+      this.getRegisterControl.spanPasswordConfirm.reset();
+      this.getRegisterControl.spanPasswordConfirm.markAsTouched();
       return;
     }
 
@@ -53,11 +61,26 @@ export class RegisterComponent implements OnInit {
     this.user.email = this.getRegisterControl.spanEmail.value;
     this.user.address = this.getRegisterControl.spanAddress.value;
     this.user.password = this.getRegisterControl.spanAddress.value;
+    this.user.passwordConfirm = this.getRegisterControl.spanPasswordConfirm.value;
 
+    console.log(this.user);
+    
+    this.authService.register(this.user).subscribe(e=>{
+
+      this.model = this.user;
+      console.log(this.model);
+      alert("da");
+
+    },error =>{
+
+      console.log(error);
+      alert("neee");
+
+    })
   }
 
   cancelRegister(){
     this.router.navigate(['home']);
-}
+  }
 
 }

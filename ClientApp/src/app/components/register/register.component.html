@@ -42,6 +42,21 @@
           *ngIf="getRegisterControl.spanAddress.touched && getRegisterControl.spanAddress.errors?.required">Address is
           required</span>
       </div>
+
+      <div class="form-group">
+        <input class="form-control" type="password" required formControlName="spanPassword" placeholder="Enter password *">
+        <span class="text-danger"
+          *ngIf="getRegisterControl.spanPassword.touched && getRegisterControl.spanPassword.errors?.required">Password is
+          required</span>
+      </div>
+      
+      <div class="form-group">
+        <input class="form-control" type="password" required formControlName="spanPasswordConfirm" placeholder="Enter password *">
+        <span class="text-danger"
+          *ngIf="getRegisterControl.spanPasswordConfirm.touched && getRegisterControl.spanPasswordConfirm.errors?.required">Password confirm is
+          required</span>
+      </div>
+      
       <div class="buttons">
         <div>
           <button type="submit" class="btn btn-primary">Apply</button>
