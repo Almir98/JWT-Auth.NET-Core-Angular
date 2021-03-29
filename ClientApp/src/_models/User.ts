@@ -1,11 +1,19 @@
 export class User {
 
-    userId: number;
-    firstName: string;
-    lastName: string;
-    phone: string;
-    email: string;
-    address: string;
-    password: string;
-    passwordConfirm: string;
+    // FirstName: string;
+    // LastName: string;
+    // Phone: string;
+    // Email: string;
+    // Adress: string;
+    // Password: string;
+    // PasswordConfirm: string;
+
+    FirstName : string;
+    LastName : string;
+    Phone : string;
+    Email : string;
+    Adress : string
+    Username: string;
+    Password :string;
+    PassworConfirm : string;
 }

@@ -5,5 +5,8 @@
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" [routerLink]="['/info']"><i class="fa fa-envelope"></i> Info</a>
       </li>
+      <li id="btn" class="nav-item" routerLinkActive="active">
+        <a class="btn btn-danger text-right" (click)="logOut()">Log out</a>
+      </li>
     </ul>
   </nav>
