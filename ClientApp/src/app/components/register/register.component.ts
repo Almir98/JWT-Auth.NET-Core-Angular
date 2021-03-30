@@ -69,7 +69,7 @@ export class RegisterComponent implements OnInit {
     this.user.PassworConfirm = this.getRegisterControl.spanPasswordConfirm.value;
 
     this.authService.register(this.user).subscribe(e =>{
-      this.router.navigate(['/home']);
+      this.router.navigate(['/information']);
 
     },error =>{
 

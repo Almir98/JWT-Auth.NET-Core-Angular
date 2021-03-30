@@ -16,6 +16,8 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AuthService } from 'src/_services/auth.service';
+import { AlertifyService } from 'src/_services/alertify.service';
+import { CustomerService } from 'src/_services/customer.service';
 
 @NgModule({
   declarations: [	
@@ -35,7 +37,9 @@ import { AuthService } from 'src/_services/auth.service';
     HttpClientModule
   ],
   providers: [
-    AuthService
+    AuthService,
+    AlertifyService,
+    CustomerService
   ],
   bootstrap: [AppComponent]
 })

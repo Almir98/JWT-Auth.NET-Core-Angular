@@ -1,13 +1,6 @@
 export class User {
 
-    // FirstName: string;
-    // LastName: string;
-    // Phone: string;
-    // Email: string;
-    // Adress: string;
-    // Password: string;
-    // PasswordConfirm: string;
-
+    //UserId: number;
     FirstName : string;
     LastName : string;
     Phone : string;

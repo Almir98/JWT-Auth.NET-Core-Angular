@@ -2,6 +2,7 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AlertifyService } from 'src/_services/alertify.service';
 import { AuthService } from '../../../_services/auth.service';
 
 @Component({
@@ -14,7 +15,7 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   model:any={};
 
-  constructor(private fb:FormBuilder, private router:Router, private authService: AuthService) { }
+  constructor(private fb:FormBuilder, private router:Router, private authService: AuthService, private alertify: AlertifyService) { }
 
   ngOnInit() {
     
@@ -34,19 +35,18 @@ export class LoginComponent implements OnInit {
     this.model.email = this.getLoginControl.spaEmail.value;
     this.model.password = this.getLoginControl.spaPassword.value;
 
-    console.log(this.model);
-
     this.authService.loginMethod(this.model).subscribe(x => {
 
       this.loginForm.reset();
-      this.router.navigate(['/home']);
+      this.alertify.successAlert("Successfully logged in");
+      this.router.navigate(['/information']);
 
     },error =>{
 
       console.log(error);
+      this.alertify.errorAlert("Something went wrong");
     })
   }
-
 
   cancelLogin()
   {

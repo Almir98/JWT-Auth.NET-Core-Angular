@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row m-0">
+    <div class="col-12">
+      <div class="title">Welcome {{user?.FirstName}}</div>
+    </div>
+
+    <form class="col-12">
+      <div class="form-group">
+        <div>First name:</div>
+        <input class="form-control" type="text" readonly name="user?.FirstName">
+      </div>
+      <div class="form-group">
+        <div>Last name:</div>
+        <input class="form-control" type="text" readonly name="user?.LastName">
+      </div>
+      <div class="form-group">
+        <div>Phone:</div>
+        <input class="form-control" type="text" readonly name="user?.Phone">
+      </div>
+      <div class="form-group">
+        <div>Email:</div>
+        <input class="form-control" type="text" readonly name="user?.Email">
+      </div>
+      <div class="form-group">
+        <div>Address:</div>
+        <input class="form-control" type="text" readonly name="user?.Adress">
+      </div>
+      <div class="form-group">
+        <div>Username:</div>
+        <input class="form-control" type="text" readonly name="user?.Username">
+      </div>
+    </form>
+
+    <div class="button">
+      <a id="btn" class="btn btn-danger text-right" (click)="logOut()">Log out</a>
+    </div>
+
+  </div>
+</div>

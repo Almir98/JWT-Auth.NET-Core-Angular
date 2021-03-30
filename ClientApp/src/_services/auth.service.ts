@@ -3,8 +3,6 @@ import { Injectable } from '@angular/core';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { environment } from '../environments/environment';
 import { map } from 'rxjs/operators';
-import { User } from 'src/_models/User';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -38,5 +36,7 @@ register(model:any)
 {
   return this.http.post(this.apiUrl+'register',model);
 }
+
+
 
 }
